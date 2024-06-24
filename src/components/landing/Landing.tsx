@@ -1,6 +1,9 @@
+import React from 'react';
+
+import Card from '@homework-task/components/landing/Card';
 import clsx from 'clsx';
 
-import { Card } from './Card.jsx';
+const __CWD__: string = process.cwd();
 
 // eslint-disable-next-line no-undef
 const vscodeProjectLink = `vscode://file/${__CWD__}`;
@@ -28,7 +31,7 @@ const cards = [
     },
 ];
 
-export const Landing = () => {
+export const Landing: React.FC = () => {
     return (
         <section
             className={clsx(

@@ -1,4 +1,11 @@
-export const Hero = ({ title, image }) => {
+import React from 'react';
+
+interface HeroProps {
+    title: string;
+    image: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ title, image }) => {
     return (
         <div className="flex row justify-center items-center gap-4 h-screen">
             <div className="w-4/12">
@@ -10,3 +17,5 @@ export const Hero = ({ title, image }) => {
         </div>
     );
 };
+
+export default Hero;

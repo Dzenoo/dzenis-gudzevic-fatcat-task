@@ -1,6 +1,14 @@
+import React from 'react';
+
 import clsx from 'clsx';
 
-export const Card = ({ title, text, link }) => (
+interface CardProps {
+    title: string;
+    text: string;
+    link: string;
+}
+
+const Card: React.FC<CardProps> = ({ title, text, link }) => (
     <div
         className={clsx(
             'flex',
@@ -41,3 +49,5 @@ export const Card = ({ title, text, link }) => (
         </a>
     </div>
 );
+
+export default Card;

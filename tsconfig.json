@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "strict": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "paths": {
+            "@homework-task/*": ["src/*"]
+        },
+        "jsx": "react"
+    },
+    "include": ["src/**/*"]
+}
