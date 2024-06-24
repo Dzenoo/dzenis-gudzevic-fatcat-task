@@ -9,6 +9,7 @@ import { ZodSchema } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { UseMutationResult } from 'react-query';
 import { FadeLoader } from 'react-spinners';
+import Button from '@homework-task/components/Button';
 
 type CreateFormProps<TFormInputs extends FieldValues> = {
     useMutation: () => UseMutationResult<any, any, TFormInputs>;
@@ -50,12 +51,7 @@ const CreateForm = <TFormInputs extends FieldValues>({
         >
             <h1 className="text-xl font-bold">Create Post</h1>
             {renderForm({ register, errors })}
-            <button
-                type="submit"
-                className="bg-primary text-white py-2 px-4 rounded"
-            >
-                Submit
-            </button>
+            <Button type="submit">Submit</Button>
             {mutation.isLoading && (
                 <div className="pt-10">
                     <FadeLoader />
