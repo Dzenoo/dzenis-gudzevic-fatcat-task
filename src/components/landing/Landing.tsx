@@ -3,9 +3,9 @@ import React from 'react';
 import Card from '@homework-task/components/landing/Card';
 import clsx from 'clsx';
 
-const __CWD__: string = process.cwd();
-
 // eslint-disable-next-line no-undef
+declare const __CWD__: string;
+
 const vscodeProjectLink = `vscode://file/${__CWD__}`;
 
 const cards = [
@@ -31,7 +31,7 @@ const cards = [
     },
 ];
 
-export const Landing: React.FC = () => {
+const Landing: React.FC = () => {
     return (
         <section
             className={clsx(
@@ -119,3 +119,5 @@ export const Landing: React.FC = () => {
         </section>
     );
 };
+
+export default Landing;

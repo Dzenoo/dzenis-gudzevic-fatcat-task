@@ -6,7 +6,7 @@ interface TrustBarProps {
     images: string[];
 }
 
-export const TrustBar: React.FC<TrustBarProps> = ({ images }) => {
+const TrustBar: React.FC<TrustBarProps> = ({ images }) => {
     return (
         <Marquee>
             {images.map((image: string) => (
@@ -15,3 +15,5 @@ export const TrustBar: React.FC<TrustBarProps> = ({ images }) => {
         </Marquee>
     );
 };
+
+export default TrustBar;

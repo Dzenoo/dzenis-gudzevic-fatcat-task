@@ -9,7 +9,7 @@
         "baseUrl": ".",
         "esModuleInterop": true,
         "paths": {
-            "@homework-task/*": ["src/*"]
+            "@homework-task/*": ["./src/*"]
         },
         "jsx": "react"
     },
