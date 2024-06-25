@@ -3,9 +3,9 @@ import React from 'react';
 import Card from '@homework-task/components/landing/Card';
 import clsx from 'clsx';
 
-// eslint-disable-next-line no-undef
 declare const __CWD__: string;
 
+// eslint-disable-next-line no-undef
 const vscodeProjectLink = `vscode://file/${__CWD__}`;
 
 const cards = [
